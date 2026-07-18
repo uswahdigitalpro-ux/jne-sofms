@@ -1,0 +1,46 @@
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Dependencies
+vendor/
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Storage
+storage/uploads/*
+storage/backups/*
+storage/logs/*
+!storage/uploads/.gitkeep
+!storage/backups/.gitkeep
+!storage/logs/.gitkeep
+
+# Cache
+cache/*
+!cache/.gitkeep
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Build files
+dist/
+build/

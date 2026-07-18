@@ -1,0 +1,26 @@
+{
+  "name": "uswahdigital/jne-sofms",
+  "description": "JNE Smart Operations & Financial Management System",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Uswah Digital",
+      "email": "uswahdigital@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "vlucas/phpdotenv": "^5.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "php -r \"if(!file_exists('.env')) copy('.env.example', '.env');\""
+    ]
+  }
+}
